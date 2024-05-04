@@ -1,0 +1,44 @@
+html,
+body {
+  font-size: 1.2rem;
+}
+
+div {
+  padding: .5rem;
+}
+
+.parent {
+  background-color: rgb(38, 157, 190);
+}
+
+.child-1 {
+  background-color: rgb(0, 128, 73);
+}
+
+.child-2 {
+  background-color: rgb(209, 64, 64);
+}
+
+.child-3 {
+  background-color: rgb(193, 52, 193);
+}
+
+/* --------- */
+
+.parent {
+  position: relative;
+  height: 200vh;
+}
+
+.child-1 {
+  position: sticky;
+  top: 0;
+}
+
+.child-2 {
+
+}
+
+.child-3 {
+
+}

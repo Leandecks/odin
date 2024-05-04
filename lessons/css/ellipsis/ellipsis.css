@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background-color: rgb(154, 29, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 70vh;
+  border: solid yellow;
+  padding: 1rem;
+  color: yellow;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

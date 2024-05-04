@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  width: 600px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+  margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.header ul {
+  padding: 0;
+}
+
+.header ul li {
+  list-style-type: none;
+}
+
+.header ul li a {
+  color: rgb(139, 134, 134);
+  text-decoration: none;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .buttons button {
+  padding: .5rem 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background: rgb(239, 233, 233);
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer ul li {
+  list-style-type: none;
+}
+
+.footer ul li a {
+  color: darkslategrey;
+  text-decoration: none;
+}

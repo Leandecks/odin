@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+  
+  <form action="https://httpbin.org/post" method="post">
+    <fieldset>
+      <legend>Your contacts</legend>
+      <label for="first_name">First Name:</label>
+      <input type="text" name="first_name" id="first_name" placeholder="Bob"><br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="you@example.com"><br>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Some more data</legend>
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password" placeholder="***"><br>
+      <label for="age">Age:</label>
+      <input type="number" name="age" id="age" placeholder="12"><br>
+      <label for="birth">Birth date:</label>
+      <input type="date" name="birth" id="birth"><br>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Message</legend>
+      <textarea name="message" id="message" cols="30" rows="5" placeholder="Your message"></textarea><br>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Selections</legend>
+      <label for="car">Choose your climber:</label>
+      <select name="car" id="car">
+        <optgroup label="Pros">
+          <option value="adam">Adam Ondra</option>
+          <option value="pete">Pete Whittaker</option>
+          <option value="magnus" selected>Magnus Midtbø</option>
+          <option value="tony">Tony Roberts</option>
+        </optgroup>
+        <optgroup label="Not as pros">
+          <option value="giova">Giovanni Vignoli</option>
+          <option value="leo">Leandro Gridelli</option>
+          <option value="sacco">Nicola Sacchetti</option>
+          <option value="clara">Clara Guglielmi</option>
+          <option value="vitto">Vittoria Morri</option>
+        </optgroup>
+      </select><br>
+      <input type="radio" name="style" id="crack">
+      <label for="crack">Crack</label>
+      <input type="radio" name="style" id="slab">
+      <label for="slab">Slab</label>
+      <input type="radio" name="style" id="sloper">
+      <label for="sloper">Sloper</label>
+      <input type="radio" name="style" id="dyno">
+      <label for="dyno">Dyno</label><br>
+      <input type="checkbox" name="chalk_type" id="liquid">
+      <label for="liquid">liquid chalk</label>
+      <input type="checkbox" name="chalk_type" id="powder" checked>
+      <label for="slab">powder chalk</label>
+      <input type="checkbox" name="chalk_type" id="ball">
+      <label for="ball">chalk ball</label>
+      <input type="checkbox" name="chalk_type" id="block" disabled>
+      <label for="dyno">chalk block</label><br>
+      <button type="submit">Submit</button>
+      <button type="button">Wandom button</button>
+      <button disabled="disabled">Disabled</button>
+      <button type="reset">Reset</button>
+    </fieldset>
+  </form>
+</body>
+</html>

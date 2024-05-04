@@ -1,0 +1,12 @@
+.element {
+  border: solid;
+}
+
+.container {
+  display: grid;
+  grid-template: 3rem 3rem / 3rem 3rem;
+  gap: 10rem 1rem;
+  /* grid-auto-rows: 3rem; */
+  grid-auto-columns: 3rem;
+  grid-auto-flow: column;
+}
