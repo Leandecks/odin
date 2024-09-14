@@ -1,0 +1,58 @@
+:root {
+  --prime: #000;
+  --second: #2f3e70;
+  --font: sans-serif;
+  --accent: whitesmoke;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-size: 20px;
+  color: var(--prime);
+  background-color: var(--second);
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--accent);
+  padding: 2rem;
+  text-align: center;
+}
+
+form h1 {
+  padding-bottom: 1rem;
+}
+
+form label {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.buttons > * {
+  width: 50%;
+  font-size: 1.3rem;
+}
