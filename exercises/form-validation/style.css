@@ -56,3 +56,11 @@ form label {
   width: 50%;
   font-size: 1.3rem;
 }
+
+input:valid {
+  color: green;
+}
+
+input:invalid {
+  color: red;
+}
