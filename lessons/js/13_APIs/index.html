@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<form>
+  <label for="key">
+    <input type="text" id="key" placeholder="Search Keyword">
+  </label>
+  <button type="button">Create new gif</button>
+</form>
+<img src="#" alt="cool gif">
+
+<script>
+  const button = document.querySelector("button");
+  const img = document.querySelector("img");
+  const input = document.querySelector("input#key");
+
+  button.addEventListener("click", () => {
+    fetchImage(input.value)
+  });
+
+  function fetchImage(string) {
+    const apiString = `https://api.giphy.com/v1/gifs/translate?api_key=9KdDsyn1zcHF65IcT2BzxZF8ci0uoIsT&s=${string}`
+
+    fetch(apiString, {
+      "mode": "cors",
+    })
+      .then(response => response.json())
+      .then(json => {
+        if (json.data.images === undefined) {
+          img.alt = "No images found";
+          console.error("No images found");
+        } else {
+          img.src = json.data.images.original.url;
+        }
+      })
+      .catch(error => {
+        img.alt = "Your gif could not be loaded.";
+        console.error("error :( " + error)
+      });
+  }
+
+</script>
+
+</body>
+</html>
